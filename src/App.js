@@ -46,7 +46,8 @@ class App extends Component {
                         <CountriesSidebar countries={this.state.countries} showInfo={this.showCountryInfo}/> : null}
                     {this.state.countries ? <CountryInfo
                         country={this.state.currentCountry ? this.state.currentCountry : this.state.countries[0].alpha3Code}
-                        getCountry={this.getCountryByCode}/> : null}
+                        getCountry={this.getCountryByCode} showInfo={this.showCountryInfo} /> : null}
+
                 </div>
             </div>
 
